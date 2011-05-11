@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+    <meta charset=utf-8 /> 
+    <title>{% block title %}Página Inicial{% endblock %} | Eventex</title> 
+    <link rel="stylesheet" href="/static/css/eventex.css" type="text/css" /> 
+</head>
+</body>
+    <div id="root">
+        <header>
+        {% block header %}
+            <h1>Eventex</h1> 
+        {% endblock %} 
+        </header>
+
+        {%block container%}{% endblock %}
+
+        <footer>
+        {% block footer %}
+            <p id="footer">All rights reserved | Copyleft | 2011</p>
+            <p>Melhor visualizado com Firefox 4, Google Chrome ou Safari</p>
+        {% endblock %}
+        </footer>
+    </div>
+</body>
+</html>
