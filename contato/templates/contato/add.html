@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %} Faça sua inscrição {{ block.super }}{% endblock %}
+
+{%block container%}
+    <div id="container">
+        <form action="." method="POST">
+            {% csrf_token %}
+            {{ form.as_p}}
+            <input class="botao" type="submit" value="Enviar Inscrição" />
+        </form>
+    </div>
+{% endblock %}

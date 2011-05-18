@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %} Faça sua inscrição {{ block.super }}{% endblock %}
+
+{%block container%}
+    <div id="container" class="sucesso">
+        <p>Parabéns {{contato.nome}}, sua inscrição foi enviada com sucesso {{contato.data_criacao}}.<p>
+        <p>Em breve entraremos em contato através do 
+        {% if contato.telefone %}
+            telefone {{contato.telefone}}
+        {% else %}
+            e-mail {{contato.email}}
+        {% endif %}.</p>
+        <br /><br />
+        <p><a href="/">Clique aqui</a> para voltar a página inicial...</p>
+
+    </div>
+
+{% endblock %}

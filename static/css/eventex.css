@@ -69,7 +69,9 @@ h1 {
 #contato {
     background: url(/static/images/contato.png) #111 no-repeat 30px 30px;
 }
-
+#contato a.inscricao {
+    font-size: 35px;
+}
 #contato a {
     font-size: 23px;
     text-shadow: -1px -1px 1px silver;
@@ -77,8 +79,64 @@ h1 {
     text-decoration: none;
 }
 
+#container form {
+    font-family: verdana;
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    font-size: 25px;
+    font-weight: bolder;
+}
+#container form label {
+    display: block;
+}
+#container form input {
+    background-color: silver;
+    border-width: 1px 2px 2px 1px;
+    border-color: silver gray gray silver;
+    border-style: solid;
+    width: 500px;
+    height: 40px;
+    padding: 5px;
+    font-size: 30px;
+    color: gray;
+    margin-bottom: 10px;
+    text-shadow: -1px -1px 1px #222;
+}
+
+#container form input:hover, #container form input:focus{
+    background: #333;
+    border: 2px solid #222;
+    text-shadow: 1px 1px 1px silver;
+}
+#container form input.botao {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    margin: 10px 0 0 280px;
+}
+#container form ul.errorlist {
+    list-style: none;
+    color: #b22222;
+}
+#container.sucesso {
+    margin-top: 100px;
+    font-size: 20px;
+    text-shadow: -2px -2px 2px #333;
+    color: black;
+    height: 100px;
+    text-align: center;
+}
+#container.sucesso a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: -2px -2px 2px #333;
+}
+
 footer {
-    margin-top: 160px;
+    margin-top: 360px;
     text-align: center;
     width: 100%;
     font-size: 15px;    
